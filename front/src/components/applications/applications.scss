@@ -1,0 +1,65 @@
+.sub_close .Applications {
+    display: none;
+}
+
+.Applications {
+    width: 100%;
+
+    table {
+        margin: 10px;
+
+        width: calc(100% - 20px);
+        border-collapse: separate;
+    }
+
+    tr {
+        height: 50px;
+    }
+
+    td {
+        width: calc(100% / 4);
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    tr:first-child {
+        td {
+            background-color: #00AC8D;
+        }
+
+        td:first-child {
+            border-top-left-radius: 30px;
+        }
+
+        td:last-child {
+            border-top-right-radius: 30px;
+        }
+    }
+
+    tr:not(:first-child) {
+        td {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        td:not(:first-child) {
+            border-left: 1px solid white;
+        }
+    }
+
+    tr:nth-child(n + 3) {
+        td {
+            border-top: 1px solid white;
+        }
+    }
+
+
+    tr:last-child {
+        td:first-child {
+            border-bottom-left-radius: 30px;
+        }
+
+        td:last-child {
+            border-bottom-right-radius: 30px;
+        }
+    }
+}

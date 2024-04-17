@@ -1,0 +1,18 @@
+.TeamsList {
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+
+    >.sub_header {
+        display: flex;
+        width: 100%;
+    }
+
+    >.card_carousel {
+        margin-top: 25px;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        overflow-x: hidden;
+    }
+}

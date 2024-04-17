@@ -1,0 +1,159 @@
+.List.close {
+    height: 0px;
+    pointer-events: none;
+
+    p {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .ButtonLarge {
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+.List {
+    grid-area: list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    transition: ease-out 100ms;
+
+    >ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    >.ButtonLarge {
+        margin-top: 45px;
+        transition: ease-out 100ms;
+    }
+}
+
+.Vacation>ul {
+    transition: ease-out 100ms;
+}
+
+.Vacation>ul.sub_close {
+    height: 0px;
+}
+
+.Vacation>ul.sub_open {
+    height: clac(0px + fit-content);
+}
+
+.close img {
+    filter: opacity(0);
+}
+
+.Vacation {
+    display: grid;
+    grid-template:
+        "role tag" auto
+        "list list" auto / auto auto;
+    width: 70%;
+    margin-top: 20px;
+
+    .role {
+        display: block;
+        grid-area: role;
+        justify-self: flex-start;
+        text-align: start;
+    }
+
+    .tag {
+        display: block;
+        grid-area: tag;
+        justify-self: flex-end;
+        text-align: end;
+    }
+
+    .list {
+        grid-area: list;
+        height: fit-content;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        color: #C8CBD0;
+        transition: ease-out 100ms;
+
+        >img {
+            position: relative;
+            top: 2px;
+            margin-left: 5px;
+        }
+    }
+
+    .sub_close {
+        pointer-events: none;
+    }
+
+    .sub_close p {
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+.drop_down {
+    transform: rotate(-90deg);
+    grid-area: drop;
+    align-self: center;
+    justify-self: center;
+    transition: ease-out 100ms;
+}
+
+.drop_down.open {
+    transform: rotate(0deg);
+}
+
+.team_list {
+    display: flex;
+    width: calc(100% - 20px);
+    justify-content: space-between;
+
+    >ul {
+        width: calc(50% - 10px);
+
+        >li {
+            display: grid;
+            padding: 20px;
+            grid-template:
+                "icon . name status drop" 25px
+                "icon . tag status drop" 25px
+                "list list list list list" auto / 50px 20px auto auto 40px;
+
+            >.profile_icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                grid-area: icon;
+                align-self: center;
+            }
+
+            >.role {
+                align-self: flex-start;
+            }
+
+            >.name {
+                grid-area: name;
+                font-weight: 400;
+                align-self: flex-start;
+            }
+
+            >.tag {
+                align-self: flex-start;
+            }
+        }
+
+        >li.back_vis {
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.10);
+            margin-top: 20px;
+        }
+    }
+}

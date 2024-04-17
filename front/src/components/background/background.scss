@@ -1,0 +1,41 @@
+.Background {
+    position: sticky;
+    margin-top: -100vh;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -10;
+
+    >#blob_1 {
+        position: sticky;
+        z-index: -10;
+        top: 70px;
+        left: 4px;
+        width: 512px;
+        height: 556px;
+        pointer-events: none;
+    }
+
+    >#blob_2 {
+        position: sticky;
+        z-index: -10;
+        top: 400px;
+        left: 539px;
+        width: 582.023px;
+        height: 534.291px;
+        pointer-events: none;
+    }
+
+    >#blob_3 {
+        position: sticky;
+        z-index: -10;
+        top: 69px;
+        left: 1276px;
+        width: 629.968px;
+        height: 655.046px;
+        pointer-events: none;
+    }
+}

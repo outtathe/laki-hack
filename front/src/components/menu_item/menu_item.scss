@@ -1,0 +1,19 @@
+.MenuItem {
+    color: #D0D0D0;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    gap: 20px;
+
+    >p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    >img {
+        height: 30px;
+        width: 30px;
+    }
+}

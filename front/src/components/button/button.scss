@@ -1,0 +1,77 @@
+.ButtonLarge {
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: none;
+    border: none;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    vertical-align: middle;
+
+    transition: background 150ms ease-out, box-shadow 150ms ease-out;
+    ;
+}
+
+.ButtonLarge.large {
+    width: 300px;
+}
+
+.ButtonLarge.small {
+    width: 180px;
+}
+
+.ButtonLarge:active {
+    transition: background 0ms ease-out, box-shadow 0ms ease-out;
+}
+
+/* PURPLE */
+.ButtonLarge.purple {
+    background: #8640DF;
+}
+
+.ButtonLarge.purple:hover {
+    background: #9755EC;
+    box-shadow: 0px 0px 10px 0px #9755EC;
+}
+
+.ButtonLarge.purple:active {
+    background: #722ACD;
+    box-shadow: none;
+}
+
+/* BLUE*/
+.ButtonLarge.blue {
+    background: #2585DE;
+}
+
+.ButtonLarge.blue:hover {
+    background: #3C9BF4;
+    box-shadow: 0px 0px 10px 0px #3C9BF4;
+}
+
+.ButtonLarge.blue:active {
+    background: #0965BA;
+    box-shadow: none;
+}
+
+/* BLACK */
+.ButtonLarge.black {
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+}
+
+.ButtonLarge.black:hover {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background: none;
+}
+
+.ButtonLarge.black:active {
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+}

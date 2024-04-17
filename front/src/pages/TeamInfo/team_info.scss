@@ -1,0 +1,57 @@
+.TeamInfo {
+    display: grid;
+    display: flex;
+
+    .Card {
+        width: calc(100% - 30px);
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #col_1 {
+        width: 440px;
+    }
+
+    #col_2 {
+        flex-grow: 1;
+    }
+
+    #col_3 {
+        width: 440px;
+    }
+
+    .StatisticCard {
+        height: 500px;
+    }
+
+    .ProfileCard {
+        height: 400px;
+    }
+
+    .AboutCard {
+        height: 400px;
+    }
+
+    .TeamCard {
+
+        .tag,
+        .about,
+        .name {
+            text-align: center;
+            justify-self: center;
+        }
+
+        >.tag,
+        .tag.vacant {
+            color: #62FF54;
+        }
+
+        .description {
+            margin-top: 50px;
+        }
+
+        .List {
+            margin-bottom: 20px;
+        }
+    }
+}

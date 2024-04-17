@@ -1,0 +1,68 @@
+.TeamPreview {
+    width: 400px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    >.team_icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        align-self: center;
+        margin-bottom: 25px;
+    }
+
+    >h5 {
+        margin-top: 10px;
+        align-self: center;
+        letter-spacing: 0.6px;
+        font-size: 20px;
+    }
+
+    >p {
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    >ul {
+        margin-top: 30px;
+
+        >li {
+            display: grid;
+            margin-top: 20px;
+            grid-template:
+                "icon . name role" 25px
+                "icon . tag tag" 25px / 50px 20px auto auto;
+
+            >.profile_icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                grid-area: icon;
+                align-self: center;
+            }
+
+            >.name {
+                grid-area: name;
+                font-weight: 400;
+            }
+
+            >.role {
+                grid-area: role;
+                text-align: end;
+                color: #7A7A7A;
+            }
+
+            >.tag {
+                grid-area: tag;
+                color: #C8CBD0;
+            }
+        }
+    }
+
+
+    >.ButtonLarge {
+        align-self: center;
+    }
+}
